@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GitHub Stats Web Service</title>
+    <link rel="stylesheet" href="/static/styles/mainpage.css">
+</head>
+<body>
+    <h1>GitHub Stats Web Service</h1>
+    <form method="POST">
+        <input type="text" name="username" placeholder="GitHub username">
+        <button type="submit">Get Stats</button>
+    </form>
+    {% if stats %}
+    <div>
+        <h2>{{ stats.username }}'s GitHub Stats</h2>
+        <img src="{{ stats.profile_image }}" alt="Profile Image">
+        <p>Public Repos: {{ stats.num_repos }}</p>
+        <p>Followers: {{ stats.followers }}</p>
+        <p>Following: {{ stats.following }}</p>
+        <p>Public Gists: {{ stats.public_gists }}</p>
+        <p>Bio: {{ stats.bio }}</p>
+    </div>
+    {% endif %}
+</body>
+</html>
