@@ -6,7 +6,7 @@ import requests
 def index():
     if request.method == 'POST':
         username = request.form.get('username')
-       stats = get_github_stats(username)
+        stats = get_github_stats(username)
         return render_template('index.html', username=username, stats=stats)
     return render_template('index.html')
 
