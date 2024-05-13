@@ -1,5 +1,5 @@
 <div style="text-align: center; ">
-    <b>GitHub Stats Web Application</b>
+    <b>GITHUB STATS WEB APPLICATION</b>
 </div>
 
 <b>Overview</b>
@@ -16,7 +16,7 @@ The GitHub Stats Web Application is a Flask-based web application that allows us
 *Clone the repository:
 *Install the required dependencies:
 *Set up environment variables (if necessary) for Flask application configuration.
-*Run the Flask application
+*Run the Flask application by typing "flask run" into your terminal
 *Access the application in your web browser at http://localhost:5000
 
 <b>Usage</b>
